@@ -1,0 +1,10 @@
+<h1>GoogleBooksAPIから本検索</h1>
+<div style="margin-bottom: 20px;">
+  <%= link_to "データベースを見にいく", books_path %>
+</div>
+<form id="bookSearch">
+  <input type="text" id="bookTitle" placeholder="検索キーワードを入力">
+  <input type="submit" value="検索">
+</form>
+<ul id="bookList"></ul>
+<%= javascript_pack_tag 'script' %>
